@@ -1,22 +1,19 @@
 ;;;
-;;; Tiny Matricies
+;;; Tiny Matrices
 ;;;
 ;;; An implementation of 1x3, 3x1, and 3x3 matricies.
 ;;;
 ;;; Copyright 2014 Benjamin Silbaugh
 
-(module tiny-matrices *
+(functor (tiny-matrices 
+		  (M (make-vec 
+			  vec-elem-1 vec-elem-2 vec-elem-3
+			  vec+vec vec-vec vec*sca sca*vec vec/sca
+			  E+ E- E* E/ Esqrt)) (N (zero one))) *
 
   (import scheme chicken)
+  (import M N)
   (use tuples)
-  (use tiny-vectors)
-  
-  (define E+ fp+)
-  (define E- fp-)
-  (define E* fp*)
-  (define E/ fp/)
-  (define zero 0.0)
-  (define one 1.0)
 
 ;;; Define 1x3 matrix as a 3 vector (triple)
 
