@@ -21,12 +21,17 @@
   (define 3x1-elem-11 vec-elem-1)
   (define 3x1-elem-21 vec-elem-2)
   (define 3x1-elem-31 vec-elem-3)
-  (define 3x1 make-3x1)
   (define 3x1+3x1 vec+vec)
   (define 3x1-3x1 vec-vec)
   (define 3x1*sca vec*sca)
   (define sca*3x1 sca*vec)
   (define 3x1/sca vec/sca)
+
+  ;; Define alias for constructor
+  (define 3x1 make-3x1)
+  (define e11<-3x1 3x1-elem-11)
+  (define e21<-3x1 3x1-elem-21)
+  (define e31<-3x1 3x1-elem-31)
 
 ;;; Define a 3x1 matrix as a 3 vector (extension of triple)
 
@@ -34,12 +39,17 @@
   (define 1x3-elem-11 vec-elem-1)
   (define 1x3-elem-12 vec-elem-2)
   (define 1x3-elem-13 vec-elem-3)
-  (define 1x3 make-1x3)
   (define 1x3+1x3 vec+vec)
   (define 1x3-1x3 vec-vec)
   (define 1x3*sca vec*sca)
   (define sca*1x3 sca*vec)
   (define 1x3/sca vec/sca)
+
+  ;; Define aliases for constructor and accessors
+  (define 1x3 make-1x3)
+  (define e11<-1x3 1x3-elem-11)
+  (define e21<-1x3 1x3-elem-21)
+  (define e31<-1x3 1x3-elem-31)
 
 ;;; Define 3X3 matrix as nonuple with row-major ordering
 
@@ -54,8 +64,18 @@
   (define 3x3-elem-32 nonuple-elem-7)
   (define 3x3-elem-33 nonuple-elem-8)
 
-  ;; A "declarative" alias for make-3x3
+  ;; Define aliases for 3x3 matrix constructor and accessors
   (define 3x3 make-3x3)
+  (define e11<-3x3 3x3-elem-11)
+  (define e12<-3x3 3x3-elem-12)  
+  (define e13<-3x3 3x3-elem-13)  
+  (define e21<-3x3 3x3-elem-21)
+  (define e22<-3x3 3x3-elem-22)  
+  (define e23<-3x3 3x3-elem-23)  
+  (define e31<-3x3 3x3-elem-31)
+  (define e32<-3x3 3x3-elem-32)  
+  (define e33<-3x3 3x3-elem-33)  
+
 
 ;;; Define row and column accessors (these should get inlined when compiled?)
 
