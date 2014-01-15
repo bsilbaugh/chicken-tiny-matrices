@@ -48,8 +48,8 @@
   ;; Define aliases for constructor and accessors
   (define 1x3 make-1x3)
   (define e11<-1x3 1x3-elem-11)
-  (define e21<-1x3 1x3-elem-21)
-  (define e31<-1x3 1x3-elem-31)
+  (define e21<-1x3 1x3-elem-12)
+  (define e31<-1x3 1x3-elem-13)
 
 ;;; Define 3X3 matrix as nonuple with row-major ordering
 
@@ -96,6 +96,14 @@
   
   (define (3x3-col-3 a)
 	(make-3x1 (3x3-elem-13 a) (3x3-elem-23 a) (3x3-elem-33 a)))
+
+  ;; Define analog aliases for row and col accessors as element accessors
+  (define r1<-3x3 3x3-row-1)
+  (define r2<-3x3 3x3-row-2)
+  (define r3<-3x3 3x3-row-3)
+  (define c1<-3x3 3x3-col-1)
+  (define c2<-3x3 3x3-col-2)
+  (define c3<-3x3 3x3-col-3)
 
 ;;; Define vector operations for 3x3
 
