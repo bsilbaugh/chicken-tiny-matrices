@@ -93,9 +93,9 @@
 (define (3x3*3x3 a b)
   (let ((a1 (3x3-row-1 a)) (a2 (3x3-row-2 a)) (a3 (3x3-row-3))
 		(b1 (3x3-col-1 b)) (b2 (3x3-col-2 b)) (b3 (3x3-col-3)))
-  (make-matrix (dot a1 b1) (dot a1 b2) (dot a1 b3)
-			   (dot a2 b1) (dot a2 b2) (dot a2 b3)
-			   (dot a3 b1) (dot a3 b2) (dot a3 b3))))
+  (make-3x3 (dot a1 b1) (dot a1 b2) (dot a1 b3)
+			(dot a2 b1) (dot a2 b2) (dot a2 b3)
+			(dot a3 b1) (dot a3 b2) (dot a3 b3))))
 
 (define (3x3*3x3*3x3 a b c)
   (3x3*3x3 a (3x3*3x3 b c)))
