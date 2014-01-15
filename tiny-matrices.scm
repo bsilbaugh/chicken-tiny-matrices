@@ -67,10 +67,10 @@
 	(make-3x1 (3x3-elem-11 a) (3x3-elem-21 a) (3x3-elem-31 a)))
 
   (define (3x3-col-2 a)
-	(make-3x1 (3x3-elem-21 a) (3x3-elem-22 a) (3x3-elem-23 a)))
+	(make-3x1 (3x3-elem-12 a) (3x3-elem-22 a) (3x3-elem-32 a)))
   
   (define (3x3-col-3 a)
-	(make-3x1 (3x3-elem-31 a) (3x3-elem-32 a) (3x3-elem-33 a)))
+	(make-3x1 (3x3-elem-13 a) (3x3-elem-23 a) (3x3-elem-33 a)))
 
 ;;; Define vector operations for 3x3
 
