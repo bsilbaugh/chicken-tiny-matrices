@@ -1,5 +1,7 @@
-~ Tiny Matrices ~
+                               ~ Tiny Matrices ~
 
 An implementation of 3X1, 1X3, and 3X3 matricies in Chicken Scheme
 
 Copyright 2014 Benjamin Silbaugh
+
+See LICENSE file for redistribution and modification permissions.
