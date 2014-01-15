@@ -1,0 +1,5 @@
+((files "tiny-matrices.setup" "tiny-matrices.scm")
+ (author "Benjamin Silbaugh")
+ (synopsis "Implementation of 1x3, 3x1, and 3x3 matrix algebra")
+ (license "BSD")
+ (needs tuples tiny-vectors))
