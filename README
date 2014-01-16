@@ -5,3 +5,31 @@ An implementation of 3X1, 1X3, and 3X3 matricies in Chicken Scheme
 Copyright 2014 Benjamin Silbaugh
 
 See LICENSE file for redistribution and modification permissions.
+
+Description
+===========
+
+Tiny Matrices provides a "reasonably" efficient implementation of matrix
+algebra in 3 dimensions. Matrices are implemented using nonuples (see
+Tuples package).
+
+Status
+======
+
+Tiny Matrices should be usable for day-to-day work. However, breaking
+changes to the language/API may occur without notice. Futhermore, there may
+still be some lingering "bugs".
+
+Installation
+============
+
+Tiny Matrices is packaged as a Chicken Scheme Egg. Installation of Tiny
+Matrices should be a simple matter of downloading the source tree, and
+running the chicken-install program.
+
+Note that Tiny Matrices has the following dependencies, which you may need
+to download and install manually before installing Tiny Matrices:
+
+* Tuples: https://github.com/bsilbaugh/chicken-tuples
+
+* Tiny Vectors: https://github.com/bsilbaugh/chicken-tiny-vectors
